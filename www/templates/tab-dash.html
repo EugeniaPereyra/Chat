@@ -1,0 +1,15 @@
+<ion-view view-title="Login">
+  <ion-content class="padding">
+    <h2>Bienvenido</h2>
+
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Ingrese su nombre" ng-model="persona.nombre">
+        </label>
+        <button class="button button-block button-positive" ng-click="Guardar(persona)" ui-sref="tab.chats">Ok</button>
+      </div>
+    </form>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,36 @@
+<ion-view view-title="Mensajes">
+  <ion-content>
+    <div class="list card" ng-repeat="mensaje in misMensajes">
+    <a class="item item-avatar">
+      <img>
+        <strong>{{mensaje.usuario}}</strong>
+        <p>{{mensaje.fechaDeIngreso}} -> {{mensaje.mensaje}}</p>
+      </a>
+    </div>
+
+    <form>
+      <div class="list">
+        <label class="item item-input" ng-model="persona.nombre"> {{persona.nombre}}
+        </label>
+        <label class="item item-input">
+          <textarea placeholder="Mensaje" ng-model="persona.mensaje"></textarea>
+        </label>
+        <button class="button button-block button-positive" ng-click="Enviar(persona)">Enviar</button>
+      </div>
+    </form>
+
+
+<!--     <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list> -->
+  </ion-content>
+</ion-view>
